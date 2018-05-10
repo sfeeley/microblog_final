@@ -1,0 +1,86 @@
+2018-05-08 19:20:27,349 ERROR: Exception on /edit_profile [GET] [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/main/routes.py", line 101, in edit_profile
+    form.zipcode.data = current_app.zipcode
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Flask' object has no attribute 'zipcode'
+2018-05-08 19:20:29,693 ERROR: Exception on /edit_profile [GET] [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/main/routes.py", line 101, in edit_profile
+    form.zipcode.data = current_app.zipcode
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Flask' object has no attribute 'zipcode'
+2018-05-08 19:20:47,460 ERROR: Exception on /edit_profile [GET] [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/main/routes.py", line 101, in edit_profile
+    form.zipcode.data = current_app.zipcode
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Flask' object has no attribute 'zipcode'
+2018-05-08 19:21:20,342 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]
+2018-05-08 19:21:25,762 ERROR: Exception on /edit_profile [GET] [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/main/routes.py", line 101, in edit_profile
+    form.zipcode.data = current_app.zipcode
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Flask' object has no attribute 'zipcode'
+2018-05-08 19:22:30,196 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]

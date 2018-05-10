@@ -1,0 +1,114 @@
+2018-05-08 13:21:38,354 ERROR: Exception on /export_posts [GET] [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/redis/connection.py", line 484, in connect
+    sock = self._connect()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/redis/connection.py", line 541, in _connect
+    raise err
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/redis/connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/redis/client.py", line 2879, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/redis/client.py", line 2749, in _execute_transaction
+    connection.send_packed_command(all_cmds)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to None:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/redis/connection.py", line 484, in connect
+    sock = self._connect()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/redis/connection.py", line 541, in _connect
+    raise err
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/redis/connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/main/routes.py", line 201, in export_posts
+    current_user.launch_task('export_posts', _('Exporting posts...'))
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/models.py", line 171, in launch_task
+    *args, **kwargs)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/rq/queue.py", line 300, in enqueue
+    job_id=job_id, at_front=at_front, meta=meta)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/rq/queue.py", line 252, in enqueue_call
+    job = self.enqueue_job(job, at_front=at_front)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/rq/queue.py", line 325, in enqueue_job
+    pipe.execute()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/redis/client.py", line 2894, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/redis/client.py", line 2749, in _execute_transaction
+    connection.send_packed_command(all_cmds)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/redis/connection.py", line 585, in send_packed_command
+    self.connect()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to None:6379. Connection refused.
+2018-05-08 14:22:49,079 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]
+2018-05-08 14:26:36,240 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]
+2018-05-08 14:26:47,599 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]
+2018-05-08 14:27:42,713 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]
+2018-05-08 14:32:51,400 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]
+2018-05-08 14:35:05,880 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]
+2018-05-08 14:35:08,806 ERROR: Exception on /index [GET] [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/main/routes.py", line 50, in index
+    print(response.status_code)
+NameError: name 'response' is not defined
+2018-05-08 14:35:26,899 ERROR: Exception on /index [GET] [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/main/routes.py", line 50, in index
+    print(response.status_code)
+NameError: name 'response' is not defined

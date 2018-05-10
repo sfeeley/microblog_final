@@ -1,0 +1,117 @@
+2018-05-08 14:40:26,578 ERROR: Exception on /index [GET] [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/main/routes.py", line 53, in index
+    prev_url=prev_url, weather=weather)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/templates/base.html", line 77, in block "content"
+    {% block app_content %}{% endblock %}
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/templates/index.html", line 13, in block "app_content"
+    <span>{{weather.weather.main}}</span>
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'requests.models.Response object' has no attribute 'weather'
+2018-05-08 14:42:09,928 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]
+2018-05-08 14:42:15,600 ERROR: Exception on /index [GET] [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/main/routes.py", line 47, in index
+    weather = get_json(requests.get("http://api.openweathermap.org/data/2.5/weather?zip=44240&APPID=ec3e4be3f426f06cc5973261cb5229fa"))
+NameError: name 'get_json' is not defined
+2018-05-08 14:43:41,318 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]
+2018-05-08 14:44:02,708 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]
+2018-05-08 14:44:06,284 ERROR: Exception on /index [GET] [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/main/routes.py", line 53, in index
+    prev_url=prev_url, weather=weather)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/templates/base.html", line 77, in block "content"
+    {% block app_content %}{% endblock %}
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/templates/index.html", line 13, in block "app_content"
+    <span>{{weather.weather.main}}</span>
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'requests.models.Response object' has no attribute 'weather'
+2018-05-08 14:45:01,572 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]

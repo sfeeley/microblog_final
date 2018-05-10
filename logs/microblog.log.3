@@ -1,0 +1,42 @@
+2018-05-08 14:45:32,433 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]
+2018-05-08 14:45:37,876 ERROR: Exception on /index [GET] [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/main/routes.py", line 50, in index
+    print(weather.status_code)
+AttributeError: 'str' object has no attribute 'status_code'
+2018-05-08 14:46:19,627 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]
+2018-05-08 14:46:26,051 ERROR: Exception on /index [GET] [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/venv/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/main/routes.py", line 50, in index
+    print(weather.status_code)
+AttributeError: 'dict' object has no attribute 'status_code'
+2018-05-08 14:47:01,550 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]
+2018-05-08 15:09:59,991 INFO: Microblog startup [in /mnt/c/Users/stacy/OneDrive/Desktop/microblog/app/__init__.py:89]

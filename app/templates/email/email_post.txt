@@ -1,0 +1,9 @@
+Dear {{user.username}},
+
+Below is the post you requested:
+
+Author: {{author}}
+Date: {{date}}
+Post: {{post}}
+
+Thank you!
